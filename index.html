@@ -1,1 +1,900 @@
-Hello Go!
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Home</title>
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="" />
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
+		</script>
+		<!-- //for-mobile-apps -->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+		<!-- js -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<!-- //js -->
+		<!-- for-gallery-rotation -->
+		<script src="js/modernizr.custom.97074.js"></script>
+		<!-- //for-gallery-rotation -->
+		<!-- FlexSlider -->
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+		<script defer src="js/jquery.flexslider.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider) {
+						$('body').removeClass('loading');
+					}
+				});
+			});
+		</script>
+		<!-- //FlexSlider -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000);
+				});
+			});
+		</script>
+		<!-- start-smoth-scrolling -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- header -->
+		<div class="header">
+			<div class="container">
+				<div class="header-nav">
+					<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+							<div class="logo">
+								<h1><a class="navbar-brand" href="index.html"><label>C</label>utie and <label> B</label>oxer<span>Baked Good Taste for you </span></a></h1>
+							</div>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="hvr-sweep-to-bottom active">
+									<a href="index.html">主页</a>
+								</li>
+								<li class="hvr-sweep-to-bottom">
+									<a href="#services1" class="scroll">调理</a>
+								</li>
+								<li class="hvr-sweep-to-bottom">
+									<a href="#services" class="scroll">欧包丹麦</a>
+								</li>
+								<li class="hvr-sweep-to-bottom">
+									<a href="#gallery" class="scroll">点心曲奇</a>
+								</li>
+								<li class="hvr-sweep-to-bottom">
+									<a href="#contact" class="scroll">关于</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- //header -->
+		<!-- banner -->
+		<div class="banner">
+			<div class="container">
+				<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<div class="banner-info">
+									<div class="banner-info-left">
+										<h3>Baked fresh for you </h3>
+										<p>WE ARE EXCITED TO COOK FOR YOU TODAY</p>
+										<div class="more">
+											<a href="#">Learn More</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="banner-info">
+									<div class="banner-info-left">
+										<h3>Baked fresh Daily </h3>
+										<p>WE ARE EXCITED TO COOK FOR YOU TODAY</p>
+										<div class="more">
+											<a href="#">Learn More</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="banner-info">
+									<div class="banner-info-left">
+										<h3>Baked fresh for you </h3>
+										<p>WE ARE EXCITED TO COOK FOR YOU TODAY</p>
+										<div class="more">
+											<a href="#">Learn More</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!--<div class="banner-pos">
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-cloud" aria-hidden="true"></i> OUR BREADS</h3>
+						<p>To take a trivial example, which of us ever undertakes laborious 
+							physical exercise.</p>
+					</div>
+				</div>
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-globe" aria-hidden="true"></i> BEST COOKIES</h3>
+						<p>To take a trivial example, which of us ever undertakes laborious 
+							physical exercise.</p>
+					</div>
+				</div>
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> WEDDING CAKES</h3>
+						<p>To take a trivial example, which of us ever undertakes laborious 
+							physical exercise.</p>
+					</div>
+				</div>
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-star" aria-hidden="true"></i>TARTS AND PIES</h3>
+						<p>To take a trivial example, which of us ever undertakes laborious 
+							physical exercise.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>-->
+			</div>
+		</div>
+		<!-- //banner -->
+		<!-- welcome -->
+		<!--<div class="welcome">
+		<div class="container">
+			<h2>Welcome !</h2>
+			<p class="ever">We Make it Happens,Something Amazing For You Everyday.</p>
+			<div class="welcome-grids">
+				<div class="col-md-3 welcome-grid">
+					<div class="welcome-grd">
+						<div class="icons">
+							<span class="glyphicon glyphicon-cutlery"></span>
+						</div>
+						<h4>OUR BREADS</h4>
+						<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+							esse quam.</p>
+					</div>
+				</div>
+				<div class="col-md-3 welcome-grid">
+					<div class="welcome-grd">
+						<div class="icons">
+							<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+						</div>
+						<h4>BEST COOKIES</h4>
+						<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+							esse quam.</p>
+					</div>
+				</div>
+				<div class="col-md-3 welcome-grid">
+					<div class="welcome-grd">
+						<div class="icons">
+							<span class="glyphicon glyphicon-filter" aria-hidden="true"></span>
+						</div>
+						<h4>WEDDING CAKES</h4>
+						<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+							esse quam.</p>
+					</div>
+				</div>
+				<div class="col-md-3 welcome-grid">
+					<div class="welcome-grd">
+						<div class="icons">
+							<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+						</div>
+						<h4>TARTS AND PIES</h4>
+						<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+							esse quam.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>-->
+		<!-- //welcome -->
+		<!-- banner-text -->
+		<!--<div class="banner-text">
+			<div class="container">
+				<div class="wmuSlider example1">
+					<div class="wmuSliderWrapper">
+						<article style="position: absolute; width: 100%; opacity: 0;">
+							<div class="banner-wrap">
+								<div class="banner-text-info banner-text-inf">
+									<h3>Treat yourself with a sweet, freshly baked goodie</h3>
+								</div>
+							</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;">
+							<div class="banner-wrap">
+								<div class="banner-text-info banner-text-inf1">
+									<h3>Everyone knows, that treating yourself with tasty</h3>
+								</div>
+							</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;">
+							<div class="banner-wrap">
+								<div class="banner-text-info banner-text-inf2">
+									<h3>Treat yourself with a sweet, freshly baked goodie</h3>
+								</div>
+							</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;">
+							<div class="banner-wrap">
+								<div class="banner-text-info banner-text-inf3">
+									<h3>Enjoy our tasty array of bakery products!</h3>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+				<script src="js/jquery.wmuSlider.js"></script>
+				<script>
+					$('.example1').wmuSlider();
+				</script>
+			</div>
+		</div>-->
+		<!-- //banner-text -->
+		<!-- services -->
+		<div id="services" class="services">
+			<div class="container">
+				<h3 class="ser">欧包丹麦</h3>
+				<p class="ever">We Make it Happens,Something Amazing For You Everyday.</p>
+				<div class="services-top">
+					<div class="col-md-6 services-top-left">
+						<div class="services-top-main">
+							<div class="col-md-6 services-left service-img">
+								<a href="images/肉桂布里欧修.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/肉桂布里欧修.jpg" height="270" width="270" alt="" class="img-responsive" />
+								</a>
+							</div>
+							<div class="col-md-6 services-left">
+								<h4>肉桂布里欧修 /18元</h4>
+								<p>除了熟知的法棍，布里欧修也是传统的法国面包，足量的鸡蛋和黄油促成了它诱人金黄色的内里与轻柔的口感。而且它是添加砂糖的面包中历史最为悠久的一种，更是萨瓦兰蛋糕、帝王蛋糕的始祖。 在布里欧修面团的基础上我们添加了亲手熬制的糖渍橙皮丁和饱满的红提干，烤制后再沾满厚重的肉桂糖。 柔软的面包组织与颗粒感的肉桂糖，鸡蛋黄油的香味与橙皮、肉桂的风味，都是一次次的碰撞融合。 渐暖的现在，来份香甜的下午茶面包提提神，用一杯热咖啡来搭配更是能享用完整个小吐司！
+								</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="services-top-main">
+							<div class="col-md-6 services-left service-img">
+								<a href="images/贝果.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/贝果.jpg" height="270" width="270" alt="" class="img-responsive" />
+								</a>
+							</div>
+							<div class="col-md-6 services-left">
+								<h4>贝果/原味7元 其他9元</h4>
+								<p>形似「马镫」的贝果是常见的餐用面包，由于烘烤前先用加入蜂蜜的沸水稍煮片刻，因此表面更具光泽，浑圆饱满诱人。 口感Q弹有嚼劲，加之热量与脂肪含量很低，不只美味而且健康，可制作三明治搭配食用。
+									</br>
+									<b>香椿贝果</b>：限定的季节性食材，饱含春天的香气。</br>
+									<b>橙皮丁贝果</b>：浓郁的橙子香气，为贝果增加多一点的香甜。</br>
+									<b>生姜红糖贝果</b>：自渍的红糖生姜加入面团，再包入云南红糖，浓郁又具功效。
+
+								</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="services-top-main">
+							<div class="col-md-6 services-left service-img">
+								<a href="images/全麦包.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/全麦包.jpg" height="270" width="270" alt="" class="img-responsive" />
+								</a>
+							</div>
+							<div class="col-md-6 services-left">
+								<h4>全麦包/15元 秋收全麦/25元</h4>
+								<p>严选进口全麦粉，热量低且麦香浓郁，没有添加任何油类，区别于市面上标榜全麦实则含糖含油的面包。因全麦面粉保留了小麦麸皮，膳食纤维含量较高所以口感比普通面包粗糙，表皮偏硬组织紧实，咀嚼起来更有韧劲。 秋收全麦在全麦包的基础上更添加多种坚果五谷，核桃、红提干、黑白芝麻、亚麻籽、南瓜籽仁等，丰富了日常所需的营养成分。
+
+								</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+					</div>
+					<div class="col-md-6 services-top-left">
+						<div class="services-top-main">
+							<div class="col-md-6 services-left service-img">
+								<a href="images/法棍.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/法棍.jpg" height="270px" width="270px" alt="" class="img-responsive" />
+								</a>
+							</div>
+							<div class="col-md-6 services-left">
+								<h4>法棍/12元 </h4>
+								<p>选用伯爵T55法国面粉制成，外皮酥脆扎实且香气扑鼻，内部湿润弹牙，不论搭配主食、浓汤还是制成三明治都是很常见的吃法。 由于不额外添加糖类和油脂等材料，反而能充分感受到小麦和发酵的香气和风味。
+								</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="services-top-main">
+							<div class="col-md-6 services-left service-img">
+								<a href="images/可颂.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/可颂.jpg" alt="" class="img-responsive" />
+								</a>
+							</div>
+							<div class="col-md-6 services-left">
+								<h4>可颂/12元</h4>
+								<p>酥脆的口感和分明的层次是美味的绝佳证明，搭配咖啡直接食用，亦或是搭配咸味食材制成三明治都很适合。</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<!--swipebox -->
+				<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script>
+				<script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+				<!--//swipebox Ends -->
+			</div>
+		</div>
+		<div class="tlinks">Collect from
+			<a href="http://www.cssmoban.com/">企业网站模板</a>
+		</div>
+
+		<div id="services1" class="services1">
+			<div class="container">
+				<h3>调理</h3>
+				<p class="ever">We Make it Happens,Something Amazing For You Everyday.</p>
+
+				<div class="services-top">
+					<div class="col-md-6 services-top-left">
+						<div class="services-top-main">
+							<div class="col-md-6 services-left service-img">
+								<a href="images/迷你F4.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/迷你F4.jpg" height="270" width="270" alt="" class="img-responsive" />
+								</a>
+							</div>
+							<div class="col-md-6 services-left">
+								<h4>迷你F4 /15元每组</h4>
+								<p>
+									迷你组合套餐包含四种味道的点心面包，一次尝到四种截然不同的美味！</br>
+									▲<b>原味奶油</b>—因难以忘怀第一次吃泡芙的感动而研发的卡仕达奶油面包，香浓顺滑，甜而不腻；</br>
+									▲<b>香橙餐包</b>—选用新鲜进口橙并手工熬煮的糖渍橙皮丁，为原本柔软的面包更添一股甜美清新的香气；</br>
+									▲<b>小仓豆沙</b>—选用传统的日式豆馅，既保有细腻绵密的豆沙又能品尝到些许红豆颗粒的口感；</br>
+									▲<b>葡萄干餐包</b>—精选大颗粒、饱满的吐鲁番红提，香甜适口。</br>
+
+								</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="services-top-main">
+							<div class="col-md-6 services-left service-img">
+								<a href="images/日式红豆.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/日式红豆.jpg" alt="" class="img-responsive" />
+								</a>
+							</div>
+							<div class="col-md-6 services-left">
+								<h4>日式红豆/8元</h4>
+								<p>寄语相思之意的大颗粒红豆，让你品尝柔软的面包之余还能感受颗颗饱满的咀嚼感，粉糯香甜，清热祛湿。（本季产品不加桂花）</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+					</div>
+					<div class="col-md-6 services-top-left">
+
+						<div class="services-top-main">
+							<div class="col-md-6 services-left service-img">
+								<a href="images/原味吐司.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/原味吐司.jpg" height="270" width="270" alt="" class="img-responsive" />
+								</a>
+							</div>
+							<div class="col-md-6 services-left">
+								<h4>原味吐司/ 13元</h4>
+								<p>松软的吐司不仅适合直接食用还适合制成各种三明治。
+								</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="services-top-main">
+							<div class="col-md-6 services-left service-img">
+								<a href="images/原味吐司.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/原味吐司.jpg" height="270px" width="270px" alt="" class="img-responsive" />
+								</a>
+							</div>
+							<div class="col-md-6 services-left">
+								<h4>黄油吐司/14元 </h4>
+								<p>更加轻盈的吐司，融合了浓郁的黄油香气，直接吃都让人停不下来。</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+				<!--<div class="services-grids wthree-agile">
+					<div class="col-md-4 services-grid">
+						<div class="para">
+							<span><img src="images/chef1.jpg" alt="" class="img-responsive" /></span>
+							<p>从木村为做出适合当地人口味的甜面包而发明的红豆面包起，日式面包就像平易近人的点心一样延伸出种类繁多的面包。蓬松柔软的组织是区别于法式德式等硬脆口感面包的最大特征，加之多样的搭配和丰富的果干馅料，成为日本人饮食生活中不可或缺的一部分。 迷你组合套餐包含四种味道的点心面包，一次尝到四种截然不同的美味！
+
+								</br>
+								▲原味奶油—因难以忘怀第一次吃泡芙的感动而研发的卡仕达奶油面包，香浓顺滑，甜而不腻；</br>
+								▲香橙餐包—选用新鲜进口橙并手工熬煮的糖渍橙皮丁，为原本柔软的面包更添一股甜美清新的香气；</br>
+								▲小仓豆沙—选用传统的日式豆馅，既保有细腻绵密的豆沙又能品尝到些许红豆颗粒的口感；</br>
+								▲葡萄干餐包—精选大颗粒、饱满的吐鲁番红提，香甜适口。</br>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 services-grid">
+						<div class="para">
+							<span><img src="images/chef2.jpg" alt="" class="img-responsive" /></span>
+							<p>松软的吐司不仅适合直接食用还适合制成各种三明治。</p>
+						</div>
+					</div>
+					<div class="col-md-4 services-grid">
+						<div class="para">
+							<span><img src="images/chef3.jpg" alt="" class="img-responsive" /></span>
+							
+							<p>更加轻盈的吐司，融合了浓郁的黄油香气，直接吃都让人停不下来。</p>
+						</div>
+					</div>
+					
+					<div class="clearfix"> </div>
+				</div>-->
+			</div>
+		</div>
+		<!-- //services -->
+		<!-- about -->
+		<!--<div id="about" class="advantages">
+		<div class="container">
+			<h3>Our Services</h3>
+			
+			
+			<div class="our-advantages-grids w3layouts-agile">
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>1.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>Great Services</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>2.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>Online Booking</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>3.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>Best Quality</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="our-advantages-grids">
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>4.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>Freshly Made</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>5.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>Healthy Ingredients</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 our-advantages-grid">
+					<div class="col-xs-3 our-advantages-grd-left">
+						<p>6.</p>
+					</div>
+					<div class="col-xs-9 our-advantages-grd-right">
+						<h4>Awesome Flavours</h4>
+						<p>Vel illum qui dolorem eum fugiat quo voluptas 
+							nulla pariatur eum iure reprehenderit.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>-->
+		<!--<div class="history">
+		<div class="container">
+			<div class="col-md-6 history-left">	
+				<h3>History</h3>
+				
+				<div class="history-left-grid">
+					<p><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i>21.7.2016</p>
+					<h4>consequatur aut perferendis</h4>
+					<p class="aut">Itaque earum rerum hic tenetur a sapiente delectus,
+						ut aut reiciendis voluptatibus maiores alias consequatur voluptates repudiandae sint et 
+						molestiae non recusandae aut perferendis.</p>
+				</div>
+				<div class="history-left-grid">
+					<p><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i>28.7.2016</p>
+					<h4>consequatur aut perferendis</h4>
+					<p class="aut">Itaque earum rerum hic tenetur a sapiente delectus,
+						ut aut reiciendis voluptatibus maiores alias consequatur voluptates repudiandae sint et 
+						molestiae non recusandae aut perferendis.</p>
+				</div>
+				<div class="history-left-grid">
+					<p><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i>03.8.2016</p>
+					<h4>consequatur aut perferendis</h4>
+					<p class="aut">Itaque earum rerum hic tenetur a sapiente delectus,
+						ut aut reiciendis voluptatibus maiores alias consequatur voluptates repudiandae sint et 
+						molestiae non recusandae aut perferendis.</p>
+				</div>
+			</div>
+			<div class="col-md-6 history-right">
+				<h3>What We Offer</h3>
+				<h4>voluptatibus maiores alias</h4>
+				<p>To take a trivial example, which of us ever undertakes laborious physical 
+					exercise, except to obtain some advantage from it? But who has any right to 
+					find fault with a man who chooses to enjoy a pleasure.</p>
+				<ul>
+					<li><a href="#">recusandae aut perferendis</a></li>
+					<li><a href="#">voluptatibus maiores alias</a></li>
+					<li><a href="#">molestiae non recusandae</a></li>
+					<li><a href="#">alias consequatur voluptates</a></li>
+					<li><a href="#">tenetur a sapiente delectus</a></li>
+					<li><a href="#">earum rerum hic tenetur</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>-->
+		<!-- //about -->
+		<!-- newsletter -->
+		<!--<div class="newsletter w3layouts-agile">
+		<div class="container">
+			<div class="newsletter-info-agile-w3ls">
+				<h3>Newsletter</h3>
+				<div class="letter">
+				<form action="#" method="post">
+										
+									<input type="email" placeholder="Enter Your Mail..." required="">			
+									
+									
+									<input type="submit" value="" >
+
+							</form>
+				</div>
+				<div class="clearfix"> </div>
+				
+			</div>
+		</div>
+	</div>-->
+		<!-- //newsletter -->
+		<!-- gallery -->
+		<div id="gallery" class="gallery">
+			<div class="container">
+				<h3>点心曲奇</h3>
+				<p class="ever">We Make it Happens,Something Amazing For You Everyday.</p>
+				<div class="gallery-grids">
+					<section>
+						<ul id="da-thumbs" class="da-thumbs">
+
+							<li>
+								<a href="images/无花果曲奇.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/无花果曲奇.jpg" alt="" />
+
+									<div>
+										<h5>无花果曲奇/18元 100克</h5>
+										<span>选用亚麻籽油替代黄油，用薄脆和杏仁粉增加口感跟香气，加之糖渍无花果的颗粒爆破感，更有不输黄油类曲奇的酥脆风味。</span>
+									</div>
+								</a>
+
+								<h4><font color="#FF9900">无花果曲奇/18元 100克</font> </h4>
+								<p class="ever">选用亚麻籽油替代黄油，用薄脆和杏仁粉增加口感跟香气，加之糖渍无花果的颗粒爆破感，更有不输黄油类曲奇的酥脆风味。</p>
+
+							</li>
+							<li>
+								<a href="images/盾牌曲奇.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/盾牌曲奇.jpg" alt="" />
+									<div>
+										<h5>盾牌曲奇/18元100克</h5>
+										<span>美国杏仁片和麦芽糖的碰撞，搭配出外圈酥脆内馅焦香的小点，坚果风味浓郁，搭配茶或者咖啡皆可。</span>
+									</div>
+								</a>
+
+								<h4><font color="#FF9900">盾牌曲奇/18元100克</font></h4>
+								<p class="ever">美国杏仁片和麦芽糖的碰撞，搭配出外圈酥脆内馅焦香的小点，坚果风味浓郁，搭配茶或者咖啡皆可。</p>
+
+							</li>
+							<li>
+								<a href="images/双重巧克力.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/双重巧克力.jpg" alt="" />
+									<div>
+										<h5>双重巧克力/18元100克 </h5>
+										<span>巧克力面团加上苦甜巧克力豆，浓郁的巧克力风味，适合搭配牛奶和巧克力爱好者。</span>
+									</div>
+								</a>
+
+								<h4><font color="#FF9900">双重巧克力/18元100克 </font></h4>
+								<p class="ever">巧克力面团加上苦甜巧克力豆，浓郁的巧克力风味，适合搭配牛奶和巧克力爱好者。</p>
+
+							</li>
+
+							<li>
+								<a href="images/司康.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/司康.jpg" alt="" />
+									<div>
+										<h5>司康/4元30克 原味/红糖/提子 六块起订</h5>
+										<span>历史悠久的传统英式小点，口感醇香，酥性适口，一般搭配下午茶或者沾果酱食用。</span>
+									</div>
+								</a>
+
+								<h4><font color="#FF9900">司康/4元30克 原味/红糖/提子 六块起订</font> </h4>
+								<p class="ever">历史悠久的传统英式小点，口感醇香，酥性适口，一般搭配下午茶或者沾果酱食用。</p>
+
+							</li>
+
+							<li>
+								<a href="images/双重巧克力.jpg" class=" mask b-link-stripe b-animate-go   swipebox" title="">
+									<img src="images/双重巧克力.jpg" alt="" />
+									<div>
+										<h5>丹麦曲/18元100克</h5>
+										<span>黄油香气浓郁，最为酥性的一款曲奇，甜度适中。</span>
+									</div>
+								</a>
+
+								<h4><font color="#FF9900">丹麦曲/18元100克</font> </h4>
+								<p class="ever">黄油香气浓郁，最为酥性的一款曲奇，甜度适中。</p>
+							</li>
+
+							<!--<li>
+							<a href="images/双重巧克力.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="">
+								<img src="images/双重巧克力.jpg" alt="" />
+								<div>
+									<h5>丹麦曲/18元100克</h5>
+									<span>黄油香气浓郁，最为酥性的一款曲奇，甜度适中。</span>
+								</div>
+							</a>
+						</li>-->
+							<!--<li>	
+							<a href="images/司康.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="">
+								<img src="images/司康.jpg" alt="" />
+								<div>
+									<h5>司康/4元30克 原味/红糖/提子 六块起订</h5>
+									<span>历史悠久的传统英式小点，口感醇香，酥性适口，一般搭配下午茶或者沾果酱食用。</span>
+								</div>
+							</a>
+						</li>-->
+
+						</ul>
+					</section>
+					<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+					<script type="text/javascript">
+						$(function() {
+
+							$(' #da-thumbs > li ').each(function() {
+								$(this).hoverdir();
+							});
+
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+		<!-- //gallery -->
+		<!-- contact -->
+		<div id="contact" class="contact">
+			<div class="container">
+				<h3>关于</h3>
+				<p class="ever">To take a trivial example, which of us ever undertakes laborious physical exercise.</p>
+				<div class="contact-us1-bottom w3layouts-agile">
+					<!--<form action="#" method="post">
+						<input type="text" placeholder="Name" required="">
+						<input type="email" placeholder="Email" required="">
+
+						<textarea placeholder="Message" required></textarea>
+						<input type="submit" value="Submit">
+
+					</form>-->
+					<div class="home-radio-clock">
+						<ul>
+							<li><i class="glyphicon glyphicon-home" aria-hidden="true"></i>Our Home</li>
+							<li><i class="glyphicon glyphicon-bullhorn" aria-hidden="true"></i>Call Us</li>
+
+						</ul>
+					</div>
+					<div class="home-radio-clock-right">
+						<ul>
+							<li>武汉</li>
+							<li class="lst"></li>
+
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="map">
+					<iframe src="" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+				</div>
+			</div>
+		</div>
+		<!-- //contact -->
+		<!-- footer -->
+		<!--<div class="footer w3layouts-agile">
+			<div class="container">
+				<div class="footer-grids">
+					<div class="col-md-3 footer-grid-w3layouts-agile">
+						<h3 class="title">Services</h3>
+						<ul>
+							<li>
+								<a href="#">Rerum hic tenetur</a>
+							</li>
+							<li>
+								<a href="#">Molestiae non recusandae</a>
+							</li>
+							<li>
+								<a href="#">Voluptates repudiandae</a>
+							</li>
+							<li>
+								<a href="#">Necessitatibus saepe</a>
+							</li>
+							<li>
+								<a href="#">Debitis aut rerum</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid-w3layouts-agile">
+						<h3 class="title">Information</h3>
+						<ul>
+							<li>
+								<a href="#">Quibusdam et aut</a>
+							</li>
+							<li>
+								<a href="#">Testimonials</a>
+							</li>
+							<li>
+								<a href="#">Archives</a>
+							</li>
+							<li>
+								<a href="#">Our Staff</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid-w3layouts-agile">
+						<h3 class="title">More details</h3>
+						<ul>
+							<li>
+								<a href="#">About us</a>
+							</li>
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#">Terms &amp; Conditions</a>
+							</li>
+							<li>
+								<a href="#">Site map</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid-w3layouts-agile contact-grid">
+						<h3 class="title">Contact us</h3>
+						<ul>
+							<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>New York Still Road.</li>
+							<li class="adrs">756 gt globel Place</li>
+							<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+000 100 444 1111</li>
+							<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+								<a href="mailto:example@mail.com">mail@example.com</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>-->
+		<div class="copy">
+			<div class="container">
+				<div class="copy-left-w3l-agile">
+					<p>Copyright &copy; 2019.Company name All rights reserved.</p>
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li>
+							<a href="#" class="fb"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#" class="gg"></a>
+						</li>
+						<li>
+							<a href="#" class="pn"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!--//footer-->
+		<!-- for bootstrap working -->
+		<script src="js/bootstrap.js">
+		</script>
+		<!-- //for bootstrap working -->
+		<!-- here stars scrolling icon -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+					var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+					};
+				*/
+
+				$().UItoTop({
+					easingType: 'easeOutQuart'
+				});
+
+			});
+		</script>
+		<!-- //here ends scrolling icon -->
+	</body>
+
+</html>
