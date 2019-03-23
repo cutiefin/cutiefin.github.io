@@ -1,0 +1,40 @@
+```
+
+```
+
+
+docker-machine ssh default
+sudo sed -i "s|EXTRA_ARGS='|EXTRA_ARGS='--registry-mirror=http://f1361db2.m.daocloud.io |g" /var/lib/boot2docker/profile
+exit
+docker-machine restart default 
+
+
+
+docker run hello-world
+
+
+docker run -d -p 80:80 nginx
+
+
+docker run -d -p 9200:9200 elasticsearch
+
+docker run -d -p 9200:9200 elasticsearch:5.3.3
+
+docker pull docker.elastic.co/elasticsearch/elasticsearch:5.3.3
+
+
+
+docker run -d -p 9200:9200 hangxin1940/docker-elasticsearch-cn
+
+http://f1361db2.m.daocloud.io
+
+
+docker pull hangxin1940/docker-elasticsearch-cn:v2.1.1
+启动容器
+docker run -d -p 9200:9200 -p 9300:9300 --name es hangxin1940/docker-elasticsearch-cn:v2.1.1
+
+
+docker run -d -p 9200:9200 -p 9300:9300 --name es docker.elastic.co/elasticsearch/elasticsearch:5.3.3
+
+
+docker run -d -p 9200:9200 -p 9200:9200 --name es hangxin1940/docker-elasticsearch-cn:v2.1.1
